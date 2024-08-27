@@ -1,0 +1,56 @@
+header {
+  padding: 34px 0px;
+}
+
+header .navbar-brand {
+  color: var(--clr-white) !important;
+  font-size: 34.36px;
+  font-weight: 500;
+}
+
+header .navbar-nav {
+  gap: 56px;
+}
+
+header .nav-link {
+  font-weight: 400;
+  font-size: var(--text-base);
+  color: var(--clr-white) !important;
+  opacity: 0.5;
+}
+header .nav-link.active {
+  opacity: 1;
+}
+header .contact-btn {
+  color: var(--clr-black);
+  font-weight: 500;
+  font-size: var(--tex-base);
+  background: var(--clr-white);
+  padding: 12px 22px;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 20px 0px;
+  }
+
+  header .navbar-brand {
+    font-size: 24.36px;
+  }
+
+  header .navbar-nav {
+    gap: 6px;
+  }
+
+  header .nav-link {
+    font-size: 16px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+}

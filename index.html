@@ -3,22 +3,441 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap</title>
-
+    <title>Fusion</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
 
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/client.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class=" ">
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
-    <script src="./js/Index.js"></script>
+  <body>
+    <!-- header-section -->
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#"
+            ><img class="me-2" src="./images/logo.svg" alt="logo" /> Fusion</a
+          >
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page"
+                  >Home <span class="visually-hidden">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Pages</a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Action 1</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <button class="contact-btn d-none d-lg-block" type="submit">
+            Contact Us
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- banner-section -->
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-uppercase text-center heading">
+              agen <span class="opacity-50">cy</span>
+            </h1>
+            <img class="img-fluid" src="./images/banner.png" alt="img" />
+            <p class="desc">
+              Creative agencies typically have a dynamic vibrant work culture
+              that fosters innovation,
+              <span class="opacity-50">
+                collaboration, and creativity. Here’s a glimpse into the common
+                aspects of work Collaboration with designers...
+              </span>
+            </p>
+            <div class="text-center text-lg-start">
+              <button class="about-btn">About us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about-section -->
+    <section class="about">
+      <div class="container">
+        <div
+          class="row row-cols-1 row-cols-lg-auto justify-content-center justify-content-lg-between gy-3 about-info-wrapper"
+        >
+          <div class="single-info text-center">
+            <h2 class="custom-h2">150+</h2>
+            <h3 class="custom-h3">
+              Completed <span class="opacity-50">Projects</span>
+            </h3>
+          </div>
+
+          <div class="single-info text-center">
+            <h2 class="custom-h2">10Y</h2>
+            <h3 class="custom-h3">
+              total <span class="opacity-50">experience</span>
+            </h3>
+          </div>
+
+          <div class="single-info text-center">
+            <h2 class="custom-h2">20+</h2>
+            <h3 class="custom-h3">
+              <span class="opacity-50">Team</span> members
+            </h3>
+          </div>
+        </div>
+        <div class="row about-img-wrapper gy-4">
+          <div class="col-12 col-lg-5 left-img">
+            <img src="./images/about-1.png" class="img-fluid" alt="img" />
+          </div>
+
+          <div class="col-12 col-lg-7 right-img">
+            <img src="./images/about-2.png" class="img-fluid" alt="img" />
+            <p>
+              Creative agencies typically have a dynamic and vibrant work
+              culture that fosters innovation,
+              <span class="opacity-50"
+                >collaboration, and creativity. Here’s a glimpse into the</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects-section -->
+    <section class="projects">
+      <div class="container">
+        <h2 class="custom-h2">Recent <span>projects</span></h2>
+        <div class="row gap-5 justify-content-between align-items-center">
+          <div class="col-auto">
+            <div class="single-projects">
+              <img src="./images/pro1.png" class="img-fluid" alt="img" />
+              <h3 class="custom-h3">
+                Discover <span class="opacity-50">methodes</span>
+              </h3>
+              <a href="#" class="text-decoration-underline text-capitalize">
+                view project</a
+              >
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="single-projects">
+              <img src="./images/pro2.png" class="img-fluid" alt="img" />
+              <h3 class="custom-h3">
+                Research <span class="opacity-50">methodes</span>
+              </h3>
+              <a href="#" class="text-decoration-underline text-capitalize">
+                view project</a
+              >
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="single-projects">
+              <img src="./images/pro3.png" class="img-fluid" alt="img" />
+              <h3 class="custom-h3">
+                Discover <span class="opacity-50">methodes</span>
+              </h3>
+              <a href="#" class="text-decoration-underline text-capitalize">
+                view project</a
+              >
+            </div>
+          </div>
+          <div class="col-auto align-self-end">
+            <div class="single-projects">
+              <img src="./images/pro4.png" class="img-fluid" alt="img" />
+              <h3 class="custom-h3">
+                discover & research <span class="opacity-50">methodes</span>
+              </h3>
+              <a href="#" class="text-decoration-underline text-capitalize">
+                view project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service-seciton -->
+    <section class="services">
+      <div class="container">
+        <h2 class="custom-h2">Recent <span>services</span></h2>
+        <div class="row gap-5 justify-content-between align-items-center">
+          <div class="col-auto">
+            <div class="single-service">
+              <img src="./images/service-1.png" class="img-fluid" alt="img" />
+              <h3 class="custom-h3">
+                <span class="opacity-50">Brand</span> identy
+              </h3>
+              <button href="#" class="text-capitalize">Developements</button>
+            </div>
+          </div>
+          <div class="col-auto align-self-end">
+            <div class="single-service">
+              <img src="./images/service-2.png" class="img-fluid" alt="img" />
+              <h3 class="custom-h3">
+                <span class="opacity-50">packaging</span> Design
+              </h3>
+              <button href="#" class="text-capitalize">Marketing</button>
+            </div>
+          </div>
+          <div class="col-auto align-self-end">
+            <div class="single-service">
+              <img src="./images/service-3.png" class="img-fluid" alt="img" />
+              <h3 class="custom-h3">
+                <span class="opacity-50">Content </span> marketing
+              </h3>
+              <button class="text-capitalize">Developments</button>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="single-service">
+              <img src="./images/service-4.png" class="img-fluid" alt="img" />
+              <h3 class="custom-h3">
+                <span class="opacity-50"> our </span> branding
+              </h3>
+              <button href="#" class="text-capitalize">Marketing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- client-section -->
+    <section class="clients">
+      <div class="container">
+        <h2 class="custom-h2">Clients <span>feedback</span></h2>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="single-client text-center">
+                <div class="desc">
+                  <img
+                    src="./images/client.png"
+                    class="rounded-circle"
+                    alt=""
+                  />
+                  <p>
+                    “With years of experience and successful projects under our
+                    belt, we’re
+                    <span class="opacity-50"
+                      >trusted experts with successful years of experience</span
+                    >
+                  </p>
+                </div>
+                <div class="info">
+                  <p>Michael Anthony David</p>
+                  <p>Content Creator</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single-client text-center">
+                <div class="desc">
+                  <img
+                    src="./images/client.png"
+                    class="rounded-circle"
+                    alt=""
+                  />
+                  <p>
+                    “With years of experience and successful projects under our
+                    belt, we’re
+                    <span class="opacity-50"
+                      >trusted experts with successful years of experience</span
+                    >
+                  </p>
+                </div>
+                <div class="info">
+                  <p>Michael Anthony David</p>
+                  <p>Content Creator</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single-client text-center">
+                <div class="desc">
+                  <img
+                    src="./images/client.png"
+                    class="rounded-circle"
+                    alt=""
+                  />
+                  <p>
+                    “With years of experience and successful projects under our
+                    belt, we’re
+                    <span class="opacity-50"
+                      >trusted experts with successful years of experience</span
+                    >
+                  </p>
+                </div>
+                <div class="info">
+                  <p>Michael Anthony David</p>
+                  <p>Content Creator</p>
+                </div>
+              </div>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          <!-- Pagination dots -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="text">
+          <h1 class="text-capitalize heading">
+            Let's <span class="opacity-50">Start</span>
+          </h1>
+          <h3 class="custom-h3 text-center">
+            let's taik <span class="opacity-50">with us</span>
+          </h3>
+        </div>
+        <div class="row row-cols-2 row-cols-lg-4">
+          <div class="col">
+            <div class="quick-links">Pages</div>
+
+            <ul class="list-group-item lh-lg list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase">home</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >about</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >service</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase">home</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="quick-links">CMS</div>
+
+            <ul class="list-group-item lh-lg list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >Works</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >blogs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >pricing</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="quick-links">social pages</div>
+
+            <ul class="list-group-item lh-lg list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >twitter</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >pinterist</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="quick-links">utility pages</div>
+
+            <ul class="list-group-item lh-lg list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >404 pages</a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >licence</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-uppercase"
+                  >change lock</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
-s

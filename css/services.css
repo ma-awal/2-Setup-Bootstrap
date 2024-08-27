@@ -1,0 +1,56 @@
+.services {
+  margin-bottom: 150px;
+}
+.services .custom-h2 {
+  margin-bottom: 80px;
+}
+.services .single-service :first-child {
+  margin-bottom: 32px;
+}
+.services .single-service :nth-child(2) span {
+  font-size: 40px;
+}
+.services .single-service :nth-child(2) {
+  margin-bottom: 24px;
+}
+.services .single-service button {
+  color: white;
+  font-size: var(--text-sm);
+  font-weight: 400px;
+  border: 1px solid var(--clr-white);
+  border-radius: 70px;
+  padding: 0px 10px;
+  background: transparent;
+  transition: 0.5s linear;
+}
+.services .single-service button:hover {
+  color: var(--clr-black);
+
+  background: var(--clr-white);
+}
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  .services {
+    margin-bottom: 50px;
+  }
+  .services .custom-h2 {
+    margin-bottom: 36px;
+  }
+  .services .single-service :first-child {
+    margin-bottom: 16px;
+  }
+  .services .single-service :nth-child(2) span {
+    font-size: 18px;
+  }
+  .services .single-service :nth-child(2) {
+    margin-bottom: 12px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+}

@@ -1,0 +1,44 @@
+.about {
+  margin-bottom: 149px;
+}
+.about .custom-h2 {
+  margin-bottom: 42px;
+}
+
+.about .about-info-wrapper {
+  margin-bottom: 81px;
+}
+
+.about .right-img :nth-child(2) {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 48px;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  .about {
+    margin-bottom: 50px;
+  }
+  .about .custom-h2 {
+    margin-bottom: 16px;
+  }
+
+  .about .about-info-wrapper {
+    margin-bottom: 28px;
+  }
+
+  .about .right-img :nth-child(2) {
+    font-size: 16px;
+    margin-top: 16px;
+    text-align: justify;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+}
