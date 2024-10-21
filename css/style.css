@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr-primary: #ea0029;
+  --clr-scondary: #faf2de;
+  --clr-title: #04000b;
+  --clr-para: #252523;
+  --clr-white: #ffffff;
+}

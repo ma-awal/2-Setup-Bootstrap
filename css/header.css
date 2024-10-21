@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: transparent;
+}
+.navbar {
+  padding: 28px 0px;
+}
+
+.header .nav-logo h4 {
+  color: var(--clr-white);
+  font-weight: 800;
+  line-height: 42px !important;
+}
+
+.header .nav-link-items {
+  gap: 40px;
+}
+.header .book-now-btn {
+  width: 182px;
+  height: 56px;
+  background: var(--clr-primary);
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--clr-white);
+  line-height: 100%;
+}
+.header .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--clr-white);
+}

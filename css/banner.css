@@ -1,0 +1,29 @@
+.banner {
+  width: 100vw;
+  height: 1006px;
+  background: linear-gradient(rgba(160, 5, 4, 0.9), #a00504),
+    url('/images/bnner1.png') center/cover no-repeat,
+    url('/images/bnner2.png') center/cover no-repeat;
+  background-blend-mode: hard-light;
+}
+
+.banner h1 {
+  font-size: 124px;
+  color: var(--clr-white);
+  font-weight: 800;
+}
+.banner h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--clr-white);
+}
+.book-now-btn {
+  width: 182px;
+  height: 56px;
+  background: var(--clr-primary);
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--clr-white);
+  line-height: 100%;
+}

@@ -3,22 +3,64 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap</title>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>Bootstrap Template</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class=" ">
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
-    <script src="./js/Index.js"></script>
+    <!--========== Header============ -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-logo">
+            <a href="" class="navbar-brand d-flex align-items-center">
+              <img src="/images/logo.svg" class="img-fluid" alt="img" />
+              <h4 class="text-capitalize m-0 p-0">Foodic</h4>
+            </a>
+          </div>
+          <div class="mx-auto nav-link-container">
+            <ul class="d-flex nav-link-items m-0 p-0">
+              <li>
+                <a class="nav-link text-capitalize" href="#">about +</a>
+              </li>
+              <li>
+                <a class="nav-link text-capitalize" href="#">about +</a>
+              </li>
+              <li>
+                <a class="nav-link text-capitalize" href="#">about +</a>
+              </li>
+              <li>
+                <a class="nav-link text-capitalize" href="#">about +</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-btn d-flex align-items-center">
+            <button class="book-now-btn">
+              Booking Now
+
+              <img src="/images/Arrow 2.svg" class="img-fluid" alt="img" />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--========== Banner============ -->
+    <section class="banner d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h4 class="text-white">WELCOME TO FOODIC</h4>
+            <h1 class="">DELICIOUS DISH CORNER</h1>
+            <button class="book-now-btn">Book A Table</button>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
-s
