@@ -1,0 +1,44 @@
+.ads {
+  position: relative;
+}
+.ads .ads-content {
+  max-width: 727px;
+  margin: auto;
+}
+
+.ads .ads-container {
+  background: #ea0029 url('../images/ads-bg.png') center/cover no-repeat;
+  background-blend-mode: hard-light;
+  padding: 94px;
+  overflow-y: hidden;
+  padding-bottom: 40px;
+}
+
+.ads .ads-list h5 {
+  font-size: 48px;
+  color: var(--clr-white);
+  font-weight: 800;
+  margin-bottom: 80px;
+}
+
+.ads .ads-list li {
+  border-bottom: 2px dashed var(--clr-white);
+  margin-bottom: 36px;
+}
+
+.ads .ads-list li:nth-of-type(6) {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.ads .ads-list li > span {
+  font-size: 24px;
+  font-weight: 700px;
+  color: var(--clr-white);
+}
+
+.ads .ads-wings {
+  position: absolute;
+  top: -10%;
+
+  bottom: 0;
+}

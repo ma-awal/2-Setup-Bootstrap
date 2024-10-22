@@ -5,6 +5,7 @@
   right: 0;
   width: 100%;
   background: transparent;
+  z-index: 100;
 }
 .navbar {
   padding: 28px 0px;

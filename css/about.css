@@ -1,0 +1,9 @@
+.about {
+  margin-bottom: 186px;
+  position: relative;
+}
+.about .about-wings-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -1,23 +1,55 @@
 .banner {
+  position: relative;
   width: 100vw;
-  height: 1006px;
+  height: 100vh;
   background: linear-gradient(rgba(160, 5, 4, 0.9), #a00504),
-    url('/images/bnner1.png') center/cover no-repeat,
-    url('/images/bnner2.png') center/cover no-repeat;
+    url('../images/bnner1.png') center/cover no-repeat,
+    url('../images/bnner2.png') center/cover no-repeat;
   background-blend-mode: hard-light;
+
+  margin-bottom: 97px;
 }
 
-.banner h1 {
-  font-size: 124px;
+.banner .heading {
+  font-size: 86px;
   color: var(--clr-white);
   font-weight: 800;
+  margin-bottom: 80px;
 }
-.banner h4 {
+.banner .title {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--clr-white);
+  margin-bottom: 40px;
+}
+
+.banner .title {
+  position: relative;
   font-size: 32px;
   font-weight: 700;
   color: var(--clr-white);
 }
-.book-now-btn {
+
+.banner .title::before,
+.banner .title::after {
+  content: '';
+  position: absolute;
+  top: 60%;
+  width: 45px;
+  height: 3px;
+  background: var(--clr-white);
+}
+
+.banner .title::before {
+  left: -60px;
+}
+
+.banner .title::after {
+  right: -60px;
+}
+
+.banner .book-now-btn {
   width: 182px;
   height: 56px;
   background: var(--clr-primary);
@@ -26,4 +58,16 @@
   font-weight: 700;
   color: var(--clr-white);
   line-height: 100%;
+}
+
+.leaf-1 {
+  position: absolute;
+  top: 123px;
+  left: -2px;
+}
+
+.tomato-1 {
+  position: absolute;
+  bottom: -70px;
+  left: -10px;
 }

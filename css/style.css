@@ -20,3 +20,50 @@ html {
   --clr-para: #252523;
   --clr-white: #ffffff;
 }
+
+.title-common {
+  display: inline;
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--clr-primary);
+  margin-bottom: 31px;
+}
+.title-common::before,
+.title-common::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 3px;
+  background: var(--clr-primary);
+}
+
+.title-common::before {
+  left: -54px;
+}
+
+.title-common::after {
+  right: -54px;
+}
+
+.heading-common {
+  font-size: 60px;
+  font-weight: 800;
+  color: var(--clr-title);
+  margin-bottom: 40px;
+}
+
+.para-common {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--clr-para);
+
+  margin-bottom: 70px;
+}
+.btn-common {
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  font-size: 16px;
+  font-weight: 700;
+}
